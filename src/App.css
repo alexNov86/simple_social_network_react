@@ -1,6 +1,72 @@
-ul li {
-  list-style-type: georgian;
+/* Easy reset style */
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
+html,
+body {
+  height: 100%;
+  background-color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  font-size: 20px;
+}
+/* END easy reset style */
+/*RESET STYLE*/
+
+.wrapper {
+  height: 100%;
+}
+.container {
+  max-width: 800px;
+  min-height: 100%;
+  margin: 0 auto;
+  background: #fff;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 100px 1fr;
+  grid-template-areas:
+    "header header"
+    "aside main";
+}
+.header {
+  background-color: rgb(207, 212, 129);
+  grid-area: header;
+}
+.header__logo {
+}
+.menu {
+  background-color: rgb(148, 212, 129);
+  grid-area: aside;
+}
+.menu__nav {
+}
+.menu__list {
+}
+.main {
+  background-color: rgb(102, 165, 180);
+  grid-area: main;
+}
+.section {
+}
+.profile {
+}
+.profile__bg {
+}
+.profile__foto {
+}
+.profile__description {
+}
+
+/* ul li {
+  list-style-type: georgian;
+} */
 
 /* .App {
   text-align: center;
